@@ -44,3 +44,42 @@ export type RequestError = {
   name: string;
   message: string;
 };
+
+export type PaymentProcess = {
+
+  ticketId: number;
+  cardData: {
+
+    issuer: string;
+    number: number;
+    name: string;
+    expirationDate: Date;
+    cvv: number;
+    
+  };
+
+};
+
+
+export type buyRules = {
+
+  userId: number;
+  ticketId: number;
+
+};
+
+
+export type createRules = {
+
+  ticketTypeId: number;
+  enrollmentId: number;
+
+};
+
+
+export type ticketsRules = {
+
+  userId: number;
+  ticketTypeId: number;
+  
+};
